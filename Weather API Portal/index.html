@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API Portal</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Default app icon -->
+    <link rel="icon" href="https://openweathermap.org/img/wn/01d@2x.png">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌤 Weather API Portal</h1>
+
+    <p class="subtitle">Real-Time Weather App</p>
+
+    <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city...">
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <button id="locationBtn">📍 Use My Location</button>
+
+    <div id="weatherCard">
+
+        <!-- Default icon -->
+        <img id="weatherIcon"
+             src="https://openweathermap.org/img/wn/01d@4x.png"
+             alt="Weather Icon">
+
+        <h2 id="cityName">Search a city</h2>
+
+        <h3 id="temperature">--</h3>
+
+        <p id="description">Weather info will appear here</p>
+
+        <div class="details">
+
+            <div>💧 Humidity: <span id="humidity">--</span>%</div>
+            <div>🌬 Wind: <span id="wind">--</span> km/h</div>
+            <div>🌡 Feels Like: <span id="feelsLike">--</span>°C</div>
+            <div>📊 Pressure: <span id="pressure">--</span> hPa</div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
